@@ -4,6 +4,7 @@ import urllib.request,json
 import os
 from app.models.news import Sources, Articles
 from app import config
+from app.instance import config 
 
 
 
