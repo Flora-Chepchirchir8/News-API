@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> {% endblock %}{% block content %}
+
+
+
+<div class="row">
+    <h1>News Today</h1>
+    {% for articles in articles %}
+    <div class="col-md-4 articles">
+
+
+        <div class="clearfix">
+
+            {% if articles.urlToImage %}
+
+
+            <img src="{{ articles.urlToImage }}" class="col-md-6 float-md-end mb-3 ms-md-3 mage" alt="{{ articles.title }}">{% endif %}
+
+
+            <h4 class="">{{ articles.title }}</h4>
+            <p class="card-text"><small>{{ articles.description}}...</small></p>
+
+            <div class="details">
+
+                <p><strong><span><small>{{ articles.publishedAt
+                    }}</small></span></strong>
+                </p>
+
+                <p>
+                    <a href="{{ articles.url }}" target="_blank" class="color-main"><small>Read More <i
+                class="fa fa-arrow-right"></i></small> </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

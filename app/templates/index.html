@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> {% endblock %}{% block content %}
+
+
+
+
+<div class="sources m-2">
+    <div class="card p-2">
+        <h3 class="text-uppercase headings">Top News Sources</h3>
+        <div class="row rom">
+
+
+            {% for general_news in general %}
+            <div class="col-md-2 sos">
+                <p>
+
+                    <a target="_blank" href="{{general_news.url }}">{{general_news.name}}</a>
+                </p>
+
+
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+
+
+<div class="row bcc">
+    <h2>BBC Top Headlines </h2>
+    {% for bcc in bcc %}
+    <div class="col-md-3 display">
+        <div class="card-image p-4 mb-3" style="background-image: url({{bcc.urlToImage}});">
+            <div class="headline">
+                <h4 class="news-headings mt-2"><a target="_blank" href="{{bcc.url}}">{{ bcc.title
+                                        }}</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row bcc">
+    <h2>CBC Top Headlines </h2>
+    {% for cnn_news in cbc_news %}
+    <div class="col-md-3 display">
+        <div class="card-image p-4 mb-3" style="background-image: url({{cnn_news.urlToImage}});">
+            <div class="headline">
+                <h4 class="news-headings mt-2"><a target="_blank" href="{{cnn_news.url}}">{{cnn_news.title
+                                        }}</a>
+                </h4>
+                <button class="btn btn-primary news btn-sm mt-1">CBC News</button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row bcc">
+    <h2>Aljazeera News Top Headlines </h2>
+    {% for aljazeera in aljazeera %}
+    <div class="col-md-3 display">
+        <div class="card-image p-4 mb-3" style="background-image: url({{aljazeera.urlToImage}});">
+            <div class="headline">
+                <h4 class="news-headings mt-2"><a target="_blank" href="{{aljazeera.url}}">{{ aljazeera.title
+                                        }}</a>
+                </h4>
+                <button class="btn btn-primary news btn-sm mt-1">Aljazeera News</button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

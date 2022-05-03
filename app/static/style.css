@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.navbar {
+    background-color: rgb(13, 224, 231);
+}
+
+a {
+    text-decoration: none;
+}
+
+.sources {
+    background: #6ccf6c;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 6px #B7391E;
+}
+
+.source {
+    background: #B7391E;
+    border: none;
+    border-radius: 20px;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+.sos p a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #E73C18;
+}
+
+h2 {
+    color: #E73C18;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Righteous', cursive;
+    font-weight: 900;
+}
+
+.articles {
+    padding-top: 4rem;
+}
+
+.mage {
+    width: 60%;
+}
+
+p {
+    font-size: 20px;
+    color: #000;
+    line-height: 24px;
+}
+
+h4 {
+    color: #B7391E;
+    font-weight: 900;
+}
+
+.details p a {
+    color: #B7391E;
+}
+
+.error {
+    background-color: #B7391E;
+}
+
+.error h1 h2 {
+    color: #fff;
+}
+
+.news {
+    background-color: #E73C18;
+    color: #fff;
+    border: none;
+    margin-top: 4rem;
+}
+
+.bcc {
+    padding-top: 4rem;
+}
+
+.card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    height: 30vh;
+    margin-bottom: 2rem;
+}
+
+.headline {
+    padding-top: 4rem;
+}
+
+.headline h4 a {
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+
+.cate {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+    row-gap: 1.5rem;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+
+.cate h4 {
+    color: #fff;
+}
+
+.categories {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    background-color: #B7391E;
+    border-radius: 0.3rem;
+    transition: 200ms ease;
+    box-shadow: 74px 4px 4px 6px #fff;
+}
+
+.desc p {
+    color: #fff;
+}

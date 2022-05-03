@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> {% endblock %} {% block content %}
+<div class="heading">
+    <h1> Business News Today</h1>
+    <h2>For the best sports news from around the world</h2>
+</div>
+
+<div class="business cate">
+    {% for business in business %}
+    <div class=" business-item categories">
+        <h4 class="business-title">{{business.title }}</h4>
+        <img src="{{ business.urlToImage }}" class="card-img-top" alt="{{ business.title }}">
+        <div class="desc">
+            <h6>{{business.author }}</h6>
+            <p>{{business.description }}</p>
+            <div class="desc">
+                <p>{{business.publishedAt }}</p>
+                <a class='desc' href="{{business.url }}" target="_blank">Read More</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
