@@ -1,5 +1,3 @@
-
-  
 from flask import render_template
 from app import app
 
@@ -9,3 +7,4 @@ def not_found(error):
     Function to render the 404 error page
     '''
     return render_template('notfound.html'),404
+  
