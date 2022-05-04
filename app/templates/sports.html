@@ -8,8 +8,8 @@
 <div class="sports cate">
     {% for sports in sports %}
     <div class=" sports-item categories">
-        <h4 class="sports-title">{{sports.title }}</h4>
-        <img src="{{ sports.urlToImage }}" class="card-img-top" alt="{{ sports.title }}">
+        <h4 class="sports-title">{{sports.id }}</h4>
+        <img src="{{ sports.urlToImage }}" class="card-img-top" alt="{{ sports.id }}">
         <div class="desc">
             <h6>{{sports.author }}</h6>
             <p>{{sports.description }}</p>

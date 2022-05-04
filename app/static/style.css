@@ -17,14 +17,14 @@ a {
 }
 
 .sources {
-    background: #6ccf6c;
+    background: rgb(13, 224, 231);
     border: none;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px 6px #B7391E;
+    box-shadow: 2px 2px 2px 6px #fcfbfb;
 }
 
 .source {
-    background: #B7391E;
+    background: rgb(13, 224, 231);
     border: none;
     border-radius: 20px;
 }
@@ -53,11 +53,11 @@ h3 {
 h1 {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 2px #E73C18;
+    text-shadow: 2px 2px 2px #0f0f0f;
 }
 
 h2 {
-    color: #E73C18;
+    color: #050505;
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-family: 'EB Garamond', serif;
@@ -85,16 +85,16 @@ p {
 }
 
 h4 {
-    color: #B7391E;
+    color: #080808;
     font-weight: 900;
 }
 
 .details p a {
-    color: #B7391E;
+    color: #070707;
 }
 
 .error {
-    background-color: #B7391E;
+    background-color: rgb(13, 224, 231);
 }
 
 .error h1 h2 {
@@ -102,7 +102,7 @@ h4 {
 }
 
 .news {
-    background-color: #E73C18;
+    background-color: rgb(13, 224, 231);
     color: #fff;
     border: none;
     margin-top: 4rem;
@@ -154,7 +154,7 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    background-color: #B7391E;
+    background-color:rgb(13, 224, 231);
     border-radius: 0.3rem;
     transition: 200ms ease;
     box-shadow: 74px 4px 4px 6px #fff;

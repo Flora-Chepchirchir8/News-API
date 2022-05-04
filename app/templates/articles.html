@@ -5,30 +5,30 @@
 
 <div class="row">
     <h1>News Today</h1>
-    {% for articles in Articles %}
+    {% for article in articles %}
     <div class="col-md-4 articles">
 
 
-        <div class="clearfix">
+        <div class="clear">
 
-            {% if articles.urlToImage %}
+        {% if article.urlToImage %} 
+
+            <img src="{{ article.urlToImage }}" class="col-md-6 float-md-end mb-3 ms-md-3 mage" alt="{{ articles.id }}">
+          {% endif %}
 
 
-            <img src="{{ articles.urlToImage }}" class="col-md-6 float-md-end mb-3 ms-md-3 mage" alt="{{ articles.title }}">{% endif %}
-
-
-            <h4 class="">{{ articles.title }}</h4>
-            <p class="card-text"><small>{{ articles.description}}...</small></p>
+            <h4 class="">{{ article.title }}</h4>
+            <p class="card-text"><small>{{ article.description}}...</small></p>
 
             <div class="details">
 
-                <p><strong><span><small>{{ articles.publishedAt }}</small></span></strong>
+                <p><strong><span><small>{{ article.publishedAt }}</small></span></strong>
                     
                 </p>
 
                 <p>
-                    <a href="{{ articles.url }}" target="_blank" class="color-main"><small>Read More <i
-                class="fa fa-arrow-right"></i></small> </a>
+                    <a href="{{ article.url }}" target="_blank" class="color-main"><small>Read More <i  class="fa fa-arrow-right"></i></small> </a>
+               
                 </p>
             </div>
         </div>

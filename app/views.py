@@ -9,30 +9,23 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    general_news=get_source('general')
-    
-
-    articles_news = get_articles('general')
-      # get articles from bbc-news
-    bbc_news = get_articles_headlines('bbc-news')
-    # get articles from al-jazeera-english
-    aljazeera = get_articles_headlines('al-jazeera-english')
-    cnn_home = get_articles_headlines('cnn')
-    bbc_news_home = get_articles_headlines('bbc-news')
-    cbc_news = get_articles_headlines('cbc-news')
+    general_news=get_source()
+    science_news = get_articles_headlines('us','science')
+    technology_news = get_articles_headlines('us','technology')
+    health_news = get_articles_headlines('us','health')
+    sports_news = get_articles_headlines('us','sports')
+    entertainment_news = get_articles_headlines('us','entertainment')
 
     
     title = 'Home - TITRAVIC LIVE NEWS '
     return render_template('index.html',
                            title=title,
                            general=general_news,
-                           articles=articles_news,
-                           bcc=bbc_news_home,
-                           bbc_news=bbc_news,
-                           cnn_home=cnn_home,
-                           cbc_news=cbc_news,
-                           aljazeera=aljazeera,
-                           
+                           health=health_news,
+                           technology=technology_news,
+                           sports=sports_news,
+                           entertainment=entertainment_news,
+                           science=science_news
                            )
 
 
@@ -44,8 +37,7 @@ def articles():
     '''
     # Getting articles based on the source id
     articles = get_articles("general")
-    title = "TITRAVIC LIVE NEWS"
-
+    title = "NEWS TODAY"
     return render_template('articles.html', title=title, articles=articles)
 
 

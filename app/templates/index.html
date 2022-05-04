@@ -25,47 +25,45 @@
 </div>
 
 
-<div class="row bcc">
-    <h2>BBC Top Headlines </h2>
-    {% for bcc in bcc %}
+<!-- <div class="row bcc">
+    <h2>Health Top Headlines </h2>
+    {% for health in health %}
     <div class="col-md-3 display">
-        <div class="card-image p-4 mb-3" style="background-image: url({{bcc.urlToImage}});">
+        <div class="card-image p-4 mb-3" style="background-image: url({health.urlToImage}});">
             <div class="headline">
-                <h4 class="news-headings mt-2"><a target="_blank" href="{{bcc.url}}">{{ bcc.title
-                                        }}</a>
-                </h4>
+                <h4 class="news-headings mt-2"><a target="_blank" href="{{health.url}}">{{ health.id }}</a></h4>
             </div>
         </div>
     </div>
     {% endfor %}
-</div>
+</div> -->
 
-<div class="row bcc">
-    <h2>CBC Top Headlines </h2>
-    {% for cnn_news in cbc_news %}
+ <div class="row bcc">
+    <h2>Sports Top Headlines </h2>
+    {% for sport in sports %}
     <div class="col-md-3 display">
-        <div class="card-image p-4 mb-3" style="background-image: url({{cnn_news.urlToImage}});">
+        <div class="card-image p-4 mb-3" style="background-image: url({{sport.urlToImage}});">
             <div class="headline">
-                <h4 class="news-headings mt-2"><a target="_blank" href="{{cnn_news.url}}">{{cnn_news.title}}</a>
+                <h4 class="news-headings mt-2"><a target="_blank" href="{{sport.url}}">{{sport.id}}</a>
                                         
                 </h4>
-                <button class="btn btn-primary news btn-sm mt-1">CBC News</button>
+                <button class="btn btn-primary news btn-sm mt-1">Sports News</button>
             </div>
         </div>
     </div>
     {% endfor %}
-</div>
+</div> 
 
 <div class="row bcc">
-    <h2>Aljazeera News Top Headlines </h2>
-    {% for aljazeera in aljazeera %}
+    <h2>Entertainment News Top Headlines </h2>
+    {% for entertainment in entertainment %}
     <div class="col-md-3 display">
-        <div class="card-image p-4 mb-3" style="background-image: url({{aljazeera.urlToImage}});">
+        <div class="card-image p-4 mb-3" style="background-image: url({{entertainment.urlToImage}});">
             <div class="headline">
-                <h4 class="news-headings mt-2"><a target="_blank" href="{{aljazeera.url}}">{{ aljazeera.title
-                                        }}</a>
+                <h4 class="news-headings mt-2"><a target="_blank" href="{{entertainment.url}}">{{ entertainment.id }}</a>
+                                   
                 </h4>
-                <button class="btn btn-primary news btn-sm mt-1">Aljazeera News</button>
+                <button class="btn btn-primary news btn-sm mt-1">Entertainment News</button>
             </div>
         </div>
     </div>

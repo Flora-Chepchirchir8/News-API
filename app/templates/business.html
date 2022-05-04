@@ -8,8 +8,8 @@
 <div class="business cate">
     {% for business in business %}
     <div class=" business-item categories">
-        <h4 class="business-title">{{business.title }}</h4>
-        <img src="{{ business.urlToImage }}" class="card-img-top" alt="{{ business.title }}">
+        <h4 class="business-title">{{business.id}}</h4>
+        <img src="{{ business.urlToImage }}" class="card-img-top" alt="{{ business.id }}">
         <div class="desc">
             <h6>{{business.author }}</h6>
             <p>{{business.description }}</p>
